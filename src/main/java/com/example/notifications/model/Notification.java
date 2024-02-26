@@ -25,7 +25,8 @@ public class Notification {
 
     public enum Channel {
         EMAIL,
-        SMS
+        SMS,
+        PUSH
     }
 
     public enum Status {
