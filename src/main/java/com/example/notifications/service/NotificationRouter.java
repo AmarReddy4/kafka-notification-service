@@ -16,6 +16,9 @@ public class NotificationRouter {
      * the corresponding notification object.
      */
     public Notification route(UserEvent event) {
+        if (event == null || event.getEventType() == null) {
+            throw new IllegalArgumentException("event and eventType must not be null");
+        }
         log.debug("Routing event: type={}, userId={}", event.getEventType(), event.getUserId());
 
         return switch (event.getEventType()) {
