@@ -1,6 +1,6 @@
 # Kafka Notification Service
 
-A Spring Boot application that demonstrates async event-driven architecture using Apache Kafka. The service consumes user events from Kafka topics and generates notifications (email/SMS simulation) through a producer-consumer pipeline.
+A Spring Boot app that demonstrates async event-driven architecture with Apache Kafka. Consumes user events from Kafka topics and dispatches notifications (email/SMS/push) via a producer-consumer pipeline.
 
 ## Architecture
 
